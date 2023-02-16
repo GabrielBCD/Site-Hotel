@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'CatchyMager';
-    src: url(Fontes/Catchy\ Mager\ Regular.ttf);
-}
-
-@font-face {
-    font-family: 'CocoGothic';
-    src: url(Fontes/CocoGothic_trial.ttf);
-}
 
 :root {
     --cor-azul: #0099af;
