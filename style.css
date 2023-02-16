@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CatchyMager';
+    src: url(Fontes/Catchy\ Mager\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'CocoGothic';
+    src: url(Fontes/CocoGothic_trial.ttf);
+}
+
+:root {
+    --cor-azul: #0099af;
+    --cor-sombra: #333333;
+    --cor-dourado: #ff9c1b;
+    --cor-branco: #f4f1ed;
+    --cor-cinza: #D1D1D1;
+}
+
+/* Tags */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menu de navegação */
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+}
+.nav-bar-list {
+    /* alinhar as linhas dentro da lista*/
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar-link {
+    /* Definindo um tamanho para os links */
+    height: 50px;
+    width: 150px;
+    /* alinhando o texto dentro dos linsk*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Decorações */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.nav-bar-link:hover {
+    color: var(--cor-dourado);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-shadow: 0px 0px 0px var(--cor-dourado);
+}
+
+.nav-bar-mobile-buttom {
+    display: none;
+}
+
+.nav-bar-mobile-buttom>div {
+    background-color: var(--cor-dourado);
+    margin: 6px;
+    width: 32px;
+    height: 4px;
+}
+
+/* Backgrounds */
+.nav-bar, .sec-inicio, .sec-servicos{
+    background-color: var(--cor-azul);
+}
+
+/* Main */
+.container{
+    width: 100%;
+}
+
+/* Sections */
+section{
+    padding: 3.5vh 0;
+    height: 85vh;
+}
+
+/* Inicio */
+.sec-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.img-inicio{
+    width: 3000px;
+    height: 800px;
+    border-radius: 400px 0px 0px 400px;
+    background: url(Imagens/imagem-inicio.jpg) no-repeat center center;
+    background-size: cover;
+}
+.text-box-inicio{
+    text-align: center;
+}
+.text-box-inicio > h3{
+    letter-spacing: 2px;
+}
+.text-box-inicio > h1{
+    font-size: 5em;
+    letter-spacing: 0;
+    color: var(--cor-dourado);
+}
+.text-box-inicio > h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.text-box-inicio > p{
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+/*Acomodações*/
+
+.titulo-sec-acomod {
+    font-size: 3em;
+    text-align: center;
+}
+
+.text-sec-acomod {
+    max-width: 800px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin: 25px auto 25px auto;
+}
+
+.div-acomodacoes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.div-card {
+    height: 550px;
+    width: 350px;
+    margin: 0px 20px 60px 20px;
+    background-color: white;
+    border-right: 1px solid var(--cor-cinza);
+    border-bottom: 1px solid var(--cor-cinza);
+    box-shadow: -30px 30px 0px var(--cor-sombra);
+}
+
+.img-card {
+    width: 100%;
+}
+
+.div-card-box{
+    margin: 15px;
+}
+.div-card-box h3{
+    text-align: center;
+}
+.div-card-box p{
+    text-align: justify;
+    margin: 40px 0;
+}
+.div-card-botao{
+    display: flex;
+}
+.div-card-botao-a{
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    
+    /* Decoração */
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--cor-sombra);
+    border-radius: 25px;
+
+    color: var(--cor-sombra);
+
+    
+    /* Fonte */
+    letter-spacing: 1.5px;
+    font: 0.5em;
+
+    transition: 0.2s;
+}
+.div-card-botao-a:hover{
+    background-color: var(--cor-sombra);
+    color: white;
+}
+
+/*Sessão Serviços*/
+
+.sec-servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-azul);
+}
+.sec-servicos-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.sec-servicos-text h2{
+    font-size: 3em;
+    text-align: center;
+}
+.sec-servicos-text p{
+    width: 600px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-top: 50px;
+}
+.div-img-servicos{
+    display: flex;
+    width: 800px;
+}
+.img-box{
+    flex-basis: 80px;
+    height: 500px;
+    margin: 0 5px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+.img-box:hover{
+    flex-basis: 600px;
+}
+#item1{
+    background: url(Imagens/imagem-inicio.jpg) no-repeat center center;
+    background-size: cover;
+}
+#item2{
+    background: url(Imagens/imagem.jpg) no-repeat center center;
+    background-size: cover;
+}
+#item3{
+    background: url(Imagens/quarto.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 300px;
+}
