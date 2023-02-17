@@ -240,7 +240,6 @@ section{
 }
 .img-box{
     flex-basis: 150px;
-    position: static;
     height: 650px;
     margin: 0 5px;
     border: 4px solid white;
