@@ -269,15 +269,15 @@ section{
     background-size: cover;
 }
 #item2{
-    background: url(Imagens/imagem.jpg) no-repeat center center;
+    background: url(Imagens/fotebol.jpg) no-repeat center left;
     background-size: cover;
 }
 #item3{
-    background: url(Imagens/quarto.jpg) no-repeat center center;
+    background: url(Imagens/piscina.jpeg) no-repeat center center;
     background-size: cover;
 }
 #item4{
-    background: url(Imagens/quarto.jpg) no-repeat center center;
+    background: url(Imagens/spa.png) no-repeat center center;
     background-size: cover;
 }
 
