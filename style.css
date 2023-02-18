@@ -71,17 +71,6 @@ html {
     text-shadow: 0px 0px 0px var(--cor-dourado);
 }
 
-.nav-bar-mobile-buttom {
-    display: none;
-}
-
-.nav-bar-mobile-buttom>div {
-    background-color: var(--cor-dourado);
-    margin: 6px;
-    width: 32px;
-    height: 4px;
-}
-
 /* Backgrounds */
 .nav-bar, .sec-inicio, .sec-servicos{
     background-color: var(--cor-azul);
