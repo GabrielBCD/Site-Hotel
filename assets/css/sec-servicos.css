@@ -1,0 +1,91 @@
+@keyframes text-img-box{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 3em;
+    }
+}
+
+#sec-servicos{
+    background-color: var(--cor-azul);
+}
+
+.sec-servicos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec-servicos-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.sec-servicos-text h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.sec-servicos-text p {
+    width: 600px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-top: 50px;
+}
+
+.div-img-servicos {
+    display: flex;
+    width: 800px;
+}
+
+.img-box {
+    flex-basis: 150px;
+    height: 650px;
+    margin: 0 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.img-box p {
+    display: none;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.582);
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.img-box:hover {
+    flex: 700px;
+}
+
+.img-box:hover>p {
+    display: block;
+    animation-name: text-img-box;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+#item1 {
+    background: url(../imagem/restaurante.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#item2 {
+    background: url(../imagem/fotebol.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+#item3 {
+    background: url(../imagem/piscina.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#item4 {
+    background: url(../imagem/spa.png) no-repeat center center;
+    background-size: cover;
+}
