@@ -23,7 +23,8 @@
     flex-direction: column;
     color: white;
 
-    margin: 50px 0;
+    padding: 50px 0;
+    margin-bottom: 90px;
 }
 
 .sec-servicos-text h2 {
