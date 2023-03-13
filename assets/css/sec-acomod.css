@@ -12,6 +12,7 @@
 }
 
 .div-acomodacoes {
+    margin: 40px 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -72,4 +73,82 @@
 .div-card-botao-a:hover{
     background-color: var(--cor-sombra);
     color: white;
+}
+
+@media (max-width: 1550px){
+    .titulo-sec-acomod {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .text-sec-acomod {
+        max-width: 800px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+        margin: 25px auto 25px auto;
+    }
+    
+    .div-acomodacoes {
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .div-card {
+        height: 450px;
+        width: 300px;
+        margin: 0px 20px 60px 20px;
+        background-color: white;
+        border-right: 1px solid var(--cor-cinza);
+        border-bottom: 1px solid var(--cor-cinza);
+        box-shadow: -20px 20px 0px var(--cor-sombra);
+    }
+
+    .div-card-box p{
+        font-size: 14px;
+        text-align: justify;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1050px){
+    .titulo-sec-acomod {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .text-sec-acomod {
+        max-width: 280px;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1em;
+        margin: 25px auto 25px auto;
+    }
+    
+    .div-card-box p{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    
+    .div-acomodacoes {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-card {
+        height: 425px;
+        width: 270px;
+        box-shadow: -10px 10px 0px var(--cor-sombra);
+        margin: 20px 0;
+    }
+
+    .div-card-box p{
+        font-size: 14px;
+        text-align: justify;
+        margin: 10px 0;
+    }
 }

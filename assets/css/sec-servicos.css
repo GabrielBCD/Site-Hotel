@@ -1,13 +1,14 @@
-@keyframes text-img-box{
-    0%{
+@keyframes text-img-box {
+    0% {
         font-size: 0;
     }
-    100%{
+
+    100% {
         font-size: 3em;
     }
 }
 
-#sec-servicos{
+#sec-servicos {
     background-color: var(--cor-azul);
 }
 
@@ -21,6 +22,8 @@
     display: flex;
     flex-direction: column;
     color: white;
+
+    margin: 50px 0;
 }
 
 .sec-servicos-text h2 {
@@ -88,4 +91,91 @@
 #item4 {
     background: url(../imagem/spa.png) no-repeat center center;
     background-size: cover;
+}
+
+
+.sec-servicos-tablet {
+    display: none;
+}
+
+@media (max-width: 1550px) {
+    .sec-servicos {
+        display: none;
+    }
+
+    .sec-servicos-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-tablet{
+        display: flex;
+
+        padding: 50px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box-tablet-text{
+        margin: 0 50px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box-tablet-text h3{
+        margin: 15px 0;
+        color: white;
+    }
+
+    .box-tablet-text p{
+        text-align: justify;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .color p{
+        color: black;
+    }   
+    .color h3{
+        color: black;
+    }
+
+    .align-rigth{
+        text-align: right;
+    }
+
+    .bk-white{
+        background-color: white;
+    }
+
+    .img-box-tablet{
+        height: 300px;
+        width: 300px;
+
+        
+        border-radius: 10px;
+    }
+
+    #item1 {
+        background: url(../imagem/restaurante.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #item2 {
+        background: url(../imagem/fotebol.jpg) no-repeat center left;
+        background-size: cover;
+    }
+
+    #item3 {
+        background: url(../imagem/piscina.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #item4 {
+        background: url(../imagem/spa.png) no-repeat center center;
+        background-size: cover;
+    }
 }
