@@ -16,3 +16,15 @@
     padding: 90px 0;
 
 }
+
+@media (max-width: 1050px){
+    p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+}

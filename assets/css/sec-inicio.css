@@ -88,7 +88,6 @@
 @media (max-width: 1055px) {
     .sec-inicio {
         height: auto;
-
         flex-direction: column;
     }
 
@@ -110,7 +109,6 @@
     }
     
     .text-box-inicio>p {
-        font-size: 14px;
         line-height: 20px;
         letter-spacing: 1px;
         text-align: justify;
