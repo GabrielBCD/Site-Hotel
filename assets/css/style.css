@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 1050px){
+    .section{
+        padding: 60px 0;
+    }
     p{
         font-size: 14px !important;
     }
