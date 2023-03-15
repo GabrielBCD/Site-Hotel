@@ -11,6 +11,16 @@ footer p {
     line-height: 1.4em;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.copy{
+    font-size: 16px;
+    margin: 0;
+}
+
 .div1-footer {
     display: flex;
     justify-content: space-between;
@@ -38,6 +48,7 @@ footer p {
 }
 
 .div2-footer hr {
+    margin: 0;
     align-self: baseline;
     width: 100%;
 }

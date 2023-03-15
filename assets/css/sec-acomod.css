@@ -1,5 +1,5 @@
 .titulo-sec-acomod {
-    font-size: 3em;
+    font-size: 3em !important;
     text-align: center;
 }
 
@@ -37,10 +37,12 @@
 }
 .div-card-box h3{
     text-align: center;
+    margin: 0;
+    font-size: 24px;
 }
 .div-card-box p{
     text-align: justify;
-    margin: 40px 0;
+    margin: 25px 0;
 }
 .div-card-botao{
     display: flex;
@@ -109,7 +111,7 @@
     .div-card-box p{
         font-size: 14px;
         text-align: justify;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 }
 
@@ -130,6 +132,7 @@
     .div-card-box p{
         font-size: 14px;
         margin: 20px 0;
+        line-height: 16px;
     }
     
     .div-acomodacoes {
@@ -144,11 +147,5 @@
         width: 270px;
         box-shadow: -10px 10px 0px var(--cor-sombra);
         margin: 20px 0;
-    }
-
-    .div-card-box p{
-        font-size: 14px;
-        text-align: justify;
-        margin: 10px 0;
     }
 }
