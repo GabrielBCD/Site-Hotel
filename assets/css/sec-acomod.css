@@ -117,7 +117,7 @@
 
 @media (max-width: 1050px){
     .titulo-sec-acomod {
-        font-size: 2em;
+        font-size: 2em !important;
         text-align: center;
     }
     

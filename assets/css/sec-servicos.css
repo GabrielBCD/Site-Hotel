@@ -74,30 +74,30 @@
     animation-fill-mode: forwards;
 }
 
-#item1 {
+.item1 {
     background: url(../imagem/restaurante.jpg) no-repeat center center;
     background-size: cover;
 }
 
-#item2 {
+.item2 {
     background: url(../imagem/fotebol.jpg) no-repeat center left;
     background-size: cover;
 }
 
-#item3 {
+.item3 {
     background: url(../imagem/piscina.jpeg) no-repeat center center;
     background-size: cover;
 }
 
-#item4 {
+.item4 {
     background: url(../imagem/spa.png) no-repeat center center;
     background-size: cover;
 }
 
-
 .sec-servicos-tablet {
     display: none;
 }
+
 .sec-servicos-mobile{
     display: none;
 }
