@@ -1,21 +1,38 @@
-.navbar {
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
     position: sticky;
     top: 0;
     background-color: white !important;
 }
 
-.navbar-brand {
-    font-size: 24px;
+.logo {
+    font-size: 28px;
     font-weight: bold;
     color: var(--cor-dourado);
 }
 
-.navbar-brand:hover {
-    color: var(--cor-dourado);
+.hamburger{
+    display: none;
 }
 
-.navbar-brand:visited {
-    color: var(--cor-dourado);
+.nav-bar{
+
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    padding: 10px 20px;
+    transition: 0.3s;
+    margin: 0 5px;
 }
 
 .nav-link {
@@ -27,4 +44,56 @@
 
 .nav-link:hover {
     color: var(--cor-dourado);
+}
+
+@media (max-width: 1320px) {
+    header{
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .logo{
+        font-size: 24px;
+    }
+    header{
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger > div {
+        width: 30px;
+        height: 4px;
+        margin: 3px;
+        background: black;
+        border-radius: 3px;
+
+    }
+
+    .nav-bar{
+        position: absolute;
+        top: 9.5vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background: white;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .active{
+        height: 180px;
+    }
 }
