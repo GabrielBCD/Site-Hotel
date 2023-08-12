@@ -1,0 +1,35 @@
+body{
+    background: url("assets/imagem/imagem-inicio.jpg") no-repeat center center;
+    background-size: cover;
+}
+button{
+    width: 100%;
+}
+
+.login{
+    max-width: 500px;
+    margin: 20vh auto auto auto;
+}
+
+form{
+    border-radius: 10px ;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px rgba(0, 0, 0, 0.6) solid;
+    border-radius: 4px;
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+}
