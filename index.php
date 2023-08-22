@@ -1,3 +1,24 @@
+<?php 
+session_start();
+if (isset($_GET['erro'])) { 
+    if ($_GET['erro'] == "usererrado") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Usuário ou senha incorreta</strong> insira os dados novamente
+        </div>"; 
+    }
+    if ($_GET['erro'] == "nada") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Campos em branco</strong> insira os dados novamente de forma correta!
+        </div>"; 
+    }
+    if ($_GET['erro'] == "banco") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Problemas no banco</strong> aguarde um instante e insira os dados novamente
+        </div>"; 
+    }
+
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,7 +54,7 @@
                 <li><a href="#sec-inicio" class="nav-link">Início</a></li>
                 <li><a href="#sec-acomod" class="nav-link">Acomodações</a></li>
                 <li><a href="#sec-servicos" class="nav-link">Serviços</a></li>
-                <li><a href="login.html" class="nav-link">Reserve Aqui</a></li>
+                <li><a href="login.php" class="nav-link">Reserve Aqui</a></li>
             </ul>
         </nav>
     </header>

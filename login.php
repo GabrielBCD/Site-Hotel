@@ -13,19 +13,19 @@
 <body>
 <div class="container">
     <div class="login">
-        <form>
+        <form method="POST">
             <div class="mb-3">
-                <label for="inputusuario" class="form-label">Usuário</label>
-                <input type="text" id="inputusuario">
+                <label for="inputusuario" class="form-label">E-mail</label>
+                <input type="text" id="inputusuario" name="email">
             </div>
             <div class="mb-3">
                 <label for="inputsenha" class="form-label">Senha</label>
-                <input type="password" id="inputsenha">
+                <input type="password" id="inputsenha" name="password">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
             </div>
-            <p>Não possui um cadastro? <a href="#">Clique aqui!</a></p>
+            <p>Não possui um cadastro? <a href="cadastro.html">Clique aqui!</a></p>
         </form>
     </div>
 </div>
@@ -36,3 +36,12 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+<?php 
+require_once ("app/src/login.php");
+if(isset($_POST['password'])){
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $password = md5($_POST['password']);
+    login($email,$password);
+    
+}
+?>

@@ -1,7 +1,7 @@
 <?php
 function conectar(){
 	try {
-		return new PDO('mysql:host=localhost:3306; dbname=ficha', 'root', '');
+		return new PDO('mysql:host=localhost:3306; dbname=hotel', 'root', '');
 
 	} catch (Exception $e) {
 		echo $e->getMessage();
@@ -15,7 +15,7 @@ function excluir(){
 	require("conexao.php");
 	$conexao = conectar();
 	$id = $_GET['id'];
-	$lista = $conexao->prepare("delete from ficha where ficha.id = '$id'");
+	$lista = $conexao->prepare("delete from reserva where reserva.id = '$id'");
 	$lista->execute();
 	$itens = $lista->fetchAll(PDO::FETCH_OBJ);
 	header("Location:menu.php");
@@ -26,7 +26,7 @@ function excluir_servidor(){
 	require("conexao.php");
 	$conexao = conectar();
 	$id = $_GET['id'];
-	$lista = $conexao->prepare("delete from ficha where ficha.id = '$id'");
+	$lista = $conexao->prepare("delete from reserva where reserva.id = '$id'");
 	$lista->execute();
 	$itens = $lista->fetchAll(PDO::FETCH_OBJ);
 	header("Location:menu_servidor.php");
