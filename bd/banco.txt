@@ -1,0 +1,20 @@
+
+reserva {
+	id integer pk increments
+	id_usuario integer *> usuario.id
+	quarto varchar(255)
+	valor float
+	checkin time
+	chekout time
+}
+
+usuario {
+	id integer pk increments
+	email varchar(255)
+	nome varchar(255)
+	senha integer(255)
+	cpf integer
+	cadastro timestamp
+	tipo integer
+}
+
