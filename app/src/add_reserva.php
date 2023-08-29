@@ -21,7 +21,7 @@ if(isset($_POST['nome'])){
         $lista->bindValue(':f', $status = 1);
         $lista->execute();
 
-        header("location:menu.php");
+        header("location:./index.php");
     } catch (Exception $e) {
         header("location:index.php?erro=erro");
 

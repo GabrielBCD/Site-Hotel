@@ -12,8 +12,11 @@ function cadastrar(String $nome, String $cpf, String $email, String $hsenha){
             $lista->bindValue(':c', $email);
             $lista->bindValue(':d', $hsenha);
             $lista->execute();
-    
-            header("location:../index.php");
+            
+            $_SESSION["user"]=$nome;
+			$status = "ativo";
+			$_SESSION["status"]=$status;
+            header("location:./index.php");
         } catch (Exception $e) {
             header("location:index.php?erro=erro");
     

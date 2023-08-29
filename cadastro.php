@@ -44,11 +44,11 @@ if(!isset($_POST['submit'])){
             <div>
                 <button type="submit" class="btn btn-primary" name="submit">Cadastrar</button>
             </div>
-            <p>Possui um cadastro? <a href="login.html">Clique aqui!</a></p>
+            <p>Possui um cadastro? <a href="login.php">Clique aqui!</a></p>
         </form>
     </div>
 </div>
-<p><a href="index.html">Voltar</a></p>
+<p><a href="index.php">Voltar</a></p>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

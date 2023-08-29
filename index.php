@@ -54,7 +54,15 @@ if (isset($_GET['erro'])) {
                 <li><a href="#sec-inicio" class="nav-link">Início</a></li>
                 <li><a href="#sec-acomod" class="nav-link">Acomodações</a></li>
                 <li><a href="#sec-servicos" class="nav-link">Serviços</a></li>
-                <li><a href="login.php" class="nav-link">Reserve Aqui</a></li>
+                <?php 
+                if(!isset($_SESSION["status"])){
+                    echo "<li><a href='login.php' class='nav-link'>Reserve Aqui</a></li>";
+                }else{
+                    echo " <li><a href='perfil.php' class='nav-link'>"; echo$_SESSION["user"];echo "</a></li>";
+                }
+                
+                ?>
+                
             </ul>
         </nav>
     </header>

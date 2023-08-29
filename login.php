@@ -1,3 +1,23 @@
+<?php 
+if (isset($_GET['erro'])) { 
+    if ($_GET['erro'] == "usererrado") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Usuário ou senha incorreta</strong> insira os dados novamente
+        </div>"; 
+    }
+    if ($_GET['erro'] == "nada") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Campos em branco</strong> insira os dados novamente de forma correta!
+        </div>"; 
+    }
+    if ($_GET['erro'] == "banco") { 
+        echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>Problemas no banco</strong> aguarde um instante e insira os dados novamente
+        </div>"; 
+    }
+
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,11 +45,11 @@
             <div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
             </div>
-            <p>Não possui um cadastro? <a href="cadastro.html">Clique aqui!</a></p>
+            <p>Não possui um cadastro? <a href="cadastro.php">Clique aqui!</a></p>
         </form>
     </div>
 </div>
-<p><a href="index.html">Voltar</a></p>
+<p><a href="index.php">Voltar</a></p>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -40,8 +60,8 @@
 require_once ("app/src/login.php");
 if(isset($_POST['password'])){
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $password = md5($_POST['password']);
-    login($email,$password);
+    $senha = md5($_POST['password']);
+    login($email,$senha);
     
 }
 ?>
