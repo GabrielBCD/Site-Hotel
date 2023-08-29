@@ -8,11 +8,11 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="template/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="app/template/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="template/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="app/template/dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="app/template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
 <div class="wrapper">
@@ -202,20 +202,20 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="template/plugins/jquery/jquery.min.js"></script>
+<script src="app/template/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="template/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="app/template/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="app/template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="app/template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="template/dist/js/adminlte.js"></script>
+<script src="app/template/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="template/dist/js/demo.js"></script>
+<script src="app/template/dist/js/demo.js"></script>
 </body>
 </html>
