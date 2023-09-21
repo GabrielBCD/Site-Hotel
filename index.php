@@ -102,7 +102,7 @@ if (isset($_GET['erro'])) {
                                 molestias? Distinctio doloribus saepe praesentium officia.</p>
                         </div>
                         <div class="div-card-botao">
-                            <a href="#" class="div-card-botao-a">Reserve</a>
+                            <a href="reserva.php" class="div-card-botao-a">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ if (isset($_GET['erro'])) {
                                 molestias? Distinctio doloribus saepe praesentium officia.</p>
                         </div>
                         <div class="div-card-botao">
-                            <a href="#" class="div-card-botao-a">Reserve</a>
+                            <a href="reserva.php" class="div-card-botao-a">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ if (isset($_GET['erro'])) {
                                 molestias? Distinctio doloribus saepe praesentium officia.</p>
                         </div>
                         <div class="div-card-botao">
-                            <a href="#" class="div-card-botao-a">Reserve</a>
+                            <a href="reserva.php" class="div-card-botao-a">Reserve</a>
                         </div>
                     </div>
                 </div>
