@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reserva.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <title>Reserva</title>
@@ -42,14 +42,69 @@
                 <h2 class="acomodacao-sub">Outro Nome</h2>
                 <p class="acomodacao-qrt">5 quarto(s) * 5 cama(s) * 2 banheiro(s)</p>
                 <hr>
-                <p>Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
-                    asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus necessitatibus
-                    nostrum quibusdam ratione rerum saepe ut velit.
-                    <br> <br>
-                    Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
-                    asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus necessitatibus
-                    nostrum quibusdam ratione rerum saepe ut velit.</p>
-                <p>Mostrar mais</p>
+                <div class="text-desc mb-4">
+                    <p>Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                        animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                        animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                        animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                        animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+
+                        Descrição - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam
+                        asperiores corporis culpa cupiditate doloribus ducimus est eveniet ipsam magni minus
+                        necessitatibus
+                        nostrum quibusdam ratione rerum saepe ut velit.
+
+                    </p>
+                </div>
+                <div class="mostrar-completo border rounded-4 p-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque illum ipsam laborum
+                        odit officia possimus quae quam quod tenetur? Delectus molestiae officia ratione! Asperiores
+                        eaque praesentium saepe sequi vero?
+                    </p>
+                </div>
+                <p class="mostrar"><strong>Mostrar mais</strong></p>
+                <script>
+                    mostrar = document.querySelector(".mostrar");
+                    mostrar.onclick = function() {
+                        desc = document.querySelector(".mostrar-completo");
+                        desc.classList.toggle("ativo");
+                    }
+                </script>
             </div>
             <hr>
             <div class="">
@@ -79,36 +134,5 @@
         </div>
     </div>
 </div>
-<footer>
-    <div class="div1-footer">
-        <div>
-            <h3 class="h3-footer">About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis eos consectetur
-                corrupti dolore. Atque, saepe quaerat quas excepturi soluta nam vero impedit sunt, delectus, totam
-                tenetur provident hic repellendus.</p>
-        </div>
-        <div>
-            <h3 class="h3-footer">Service</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis eos consectetur
-                corrupti dolore. Atque, saepe quaerat quas excepturi soluta nam vero impedit sunt, delectus, totam
-                tenetur provident hic repellendus.</p>
-        </div>
-        <div>
-            <h3 class="h3-footer">FAQ</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis eos consectetur
-                corrupti dolore. Atque, saepe quaerat quas excepturi soluta nam vero impedit sunt, delectus, totam
-                tenetur provident hic repellendus.</p>
-        </div>
-    </div>
-    <div class="div2-footer">
-        <hr>
-        <h3 class="copy">© Copyright 2023 Gabriel Moreira</h3>
-        <ul class="links-footer">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Whatsapp</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </div>
-</footer>
 </body>
 </html>

@@ -1,0 +1,53 @@
+/* Página de reserva */
+
+.acomodacao-title {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.box-img{
+    width: 500px;
+    height: 400px;
+    background-image: url("assets/imagem/quarto.jpg");
+}
+
+.acomodacao-sub {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.acomodacao-qrt {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.card-flutuante {
+    width: 80%;
+    height: auto;
+}
+
+.text-desc{
+    height: 150px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.mostrar{
+    cursor: pointer;
+}
+
+.mostrar-completo{
+    display: none;
+    transition: 0.2s;
+}
+
+.ativo{
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .card-flutuante {
+        display: none;
+    }
+}
