@@ -33,17 +33,12 @@
     overflow: hidden;
 }
 
-.mostrar{
-    cursor: pointer;
+.mostrar-mais{
+    padding: 0 !important;
 }
 
-.mostrar-completo{
-    display: none;
-    transition: 0.2s;
-}
-
-.ativo{
-    display: block;
+.div-imagens{
+    height: auto;
 }
 
 @media (max-width: 767px) {
