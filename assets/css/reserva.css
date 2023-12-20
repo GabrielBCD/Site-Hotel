@@ -16,36 +16,168 @@
     font-style: italic;
 }
 
-.card-flutuante {
-    width: 80%;
-    height: auto;
+.card-reserva {
+    position: sticky !important;
+    top: 30px;
 }
 
-.text-desc{
+.text-desc {
     height: 133px;
     text-align: justify;
     overflow: hidden;
 }
 
-.mostrar-mais{
+.mostrar-mais {
     padding: 0 !important;
     cursor: pointer;
     font-weight: bold;
     text-decoration-line: underline;
 }
 
-img{
+img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.text-modal{
+.text-modal {
     text-align: justify;
 }
 
-@media (max-width: 767px) {
-    .card-flutuante {
-        display: none;
-    }
+.ico-wifi {
+    position: relative;
+    background-image: url(../imagem/ico-wifi.png);
+    width: 31px;
+    height: 29px;
+    background-size: contain;
+    line-height: 0px;
+}
+
+.txt-wifi {
+    position: relative;
+    top: -14px;
+    left: 40px;
+    line-height: 0px;
+}
+
+.ico-estacionamento {
+    position: relative;
+    background-image: url(../imagem/ico-car.png);
+    width: 31px;
+    height: 29px;
+    background-size: contain;
+    line-height: 0px;
+}
+
+.txt-estacionamento {
+    position: relative;
+    top: -14px;
+    left: 40px;
+    line-height: 0px;
+}
+
+.ico-camera {
+    position: relative;
+    width: 31px;
+    height: 19px;
+    top: 2px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-camera.png);
+    background-size: contain;
+}
+
+.txt-camera {
+    position: relative;
+    top: -8px;
+    left: 40px;
+    line-height: 0px;
+}
+
+.ico-cozinha {
+    position: relative;
+    width: 29px;
+    height: 30px;
+    top: 10px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-coziha.png);
+    background-size: contain;
+}
+
+.txt-cozinha {
+    position: relative;
+    top: -4px;
+    left: 40px;
+    line-height: 0px;
+}
+
+.ico-lazer {
+    position: relative;
+    width: 34px;
+    height: 33px;
+    top: -4px;
+    left: 35px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-lazer.png);
+    background-size: contain;
+}
+
+.txt-lazer {
+    position: relative;
+    top: -13px;
+    left: 80px;
+    line-height: 0px;
+}
+
+.ico-jardim {
+    position: relative;
+    width: 29px;
+    height: 30px;
+    top: -4px;
+    left: 35px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-jardim.png);
+    background-size: contain;
+}
+
+.txt-jardim {
+    position: relative;
+    top: -13px;
+    left: 80px;
+    line-height: 0px;
+}
+
+.ico-piscina {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    top: -4px;
+    left: 35px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-piscina.png);
+    background-size: contain;
+}
+
+.txt-piscina {
+    position: relative;
+    top: -13px;
+    left: 80px;
+    line-height: 0px;
+}
+
+.ico-paisagem{
+    position: relative;
+    width: 30px;
+    height: 25px;
+    top: -4px;
+    left: 35px;
+    line-height: 0px;
+    background-image: url(../imagem/ico-paisagem.png);
+    background-size: contain;
+}
+
+.txt-paisagem {
+    position: relative;
+    top: -13px;
+    left: 80px;
+    line-height: 0px;
 }
